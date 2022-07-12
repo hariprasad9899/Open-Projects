@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.building {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hospitalName {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: lightcoral;
+}
+.hospitalBuilding {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(234, 231, 231);
+}
+.buildingLeft,
+.buildingRight {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.buildingLift {
+    width: 40%;
+    height: 100%;
+}
+.buildingLeft .floors, 
+.buildingRight .floors {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid gray;
+}
+.floors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+.firstFloor {
+    height: 90vh !important; 
+}
+.floors .window {
+    width: 100px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.174),
+                1px 1px 5px rgba(0, 0, 0, 0.174);
+}
